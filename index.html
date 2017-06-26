@@ -1,0 +1,46 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="./style/style.css"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="./js/logic.js"></script>
+</head>
+<body>
+	<div id="container">
+
+		<div id="progressBar">
+			<div id="myBar"></div>
+		</div>
+
+		<div id="score">
+			Score: <div id="count"> 0 </div>
+		</div>
+		<div id="best"></div>
+
+		<div id="equation"></div>
+		<div id="equals"> = </div>
+		<div id="answer"></div>
+
+		<div id="buttons">
+			<button id="correctButton"> <img src="./images/correct.png" id="correct" /></button>
+			<button id="incorrectButton"> <img src="./images/incorrect.png" id="incorrect"/></button>
+		</div>
+
+		<div id="gameOver" style="display: none">
+			<div id="gameOverMessage"> Game Over </div>
+			<div id="gameScore"> Score: <div id="gameScoreValue"></div> </div>
+			<div id="bestScore"> Best: <div id="bestScoreValue"></div> </div>
+		</div>
+
+		<div id="difficulty">
+			<label for="easy"> Easy </label>
+			<input type="radio" name="difficulty" class="difficulty" value="easy" id="easy" checked/>
+			<label for="hard"> Hard </label>
+			<input type="radio" name="difficulty" class="difficulty" value="hard" id="hard"/>
+			<label for="expert"> Expert </label>
+			<input type="radio" name="difficulty" class="difficulty" value="expert" id="expert"/>			
+		</div>
+
+	</div>	
+</body>
+</html>
